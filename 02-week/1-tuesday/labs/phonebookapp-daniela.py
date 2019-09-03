@@ -3,6 +3,15 @@ phonebook = {
     'Sansa': '321-321-4321',
     'Ayra': '456-456-4567',
 }
+
+#print("Electronic Phone Book")
+#1. Look up an entry 
+#2. Set an entry 
+#3. Delete an entry 
+#4. List all entries 
+#5. Quit
+
+
 # This searches for a user
 search_user = input("Enter name here:")
 print(phonebook[search_user])
