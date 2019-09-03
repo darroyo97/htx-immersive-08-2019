@@ -6,3 +6,4 @@ def word_count(string):
   print(my_dict)
 
 word_count(input("Enter phrase here:"))
+
