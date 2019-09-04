@@ -4,16 +4,14 @@ def print_menu():
     print('2. Set an entry') 
     print('3. Delete an entry') 
     print('4. List all entries') 
-    print('5. Quit') 
-    
+    print('5. Quit')    
 phonebook = {
     'Jon': '123-123-1234',
     'Sansa': '321-321-4321',
     'Ayra': '456-456-4567',
 }
-menu_choice = 0
 print_menu()
-
+menu_choice = 0
 while menu_choice != 5:
     menu_choice = int(input("What do you want to do (1-5)?"))
     if menu_choice == 1:
@@ -37,6 +35,4 @@ while menu_choice != 5:
             print("Name: ", x, "Number", phonebook[x])
         print()
     elif menu_choice != 5:
-        print_menu    
-
-         
+        print_menu             
