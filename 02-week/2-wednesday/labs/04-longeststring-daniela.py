@@ -1,6 +1,6 @@
-animals = ["Puppy", "Fish", "Elephant", "Rhino", "Cat"]
+animals = ["Elephant", "Tiger", "Chicken", "Lion"]
 
 def longest(animals):
-    return(max(animals))
-    
+    return max(animals, key=len)
+
 print(longest(animals))
