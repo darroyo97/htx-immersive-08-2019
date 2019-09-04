@@ -1,6 +1,7 @@
-animals = ["Puppy", "Fish", "Elephant", "Rhino", "Cat"]
+animals = ["Elephant", "Tiger", "Chicken", "Lion"]
 
-def smallest(animals):
-    return(min(animals))
-    
-print(smallest(animals))
+def shortest(animals):
+    return min(animals, key=len)
+
+print(shortest(animals))    
+
