@@ -21,28 +21,16 @@ while menu_choice != 5:
         search_user = input("Name:")
         if search_user in phonebook:
             print(phonebook[search_user])
-# This searches for a user
-# search_user = input("Enter name here:")
-# print(phonebook[search_user])
     elif menu_choice == 2:
         print("Add Name and Number")
         new_user = input("Name: ")
         new_user_number = input("Number: ")
         phonebook[new_user] = new_user_number
-
-#This adds new user with number
-# new_user = input("New concact name")
-# new_user_number = input("New number for user")
-# phonebook[new_user] = new_user_number
     elif menu_choice == 3:
         print("Delete an entry")
         delete_user = input("Name: ")
         if delete_user in phonebook:
             phonebook.pop(delete_user)
-#This deletes a user
-# delete_user = input("Name of user you want to delete")
-# phonebook.pop(delete_user)
-# print(phonebook)
     elif menu_choice == 4:
         print("List all entries")
         for x in phonebook.keys():
@@ -50,5 +38,5 @@ while menu_choice != 5:
         print()
     elif menu_choice != 5:
         print_menu    
-#To print all enteries 
+
          
