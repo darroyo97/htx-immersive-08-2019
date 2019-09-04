@@ -9,3 +9,6 @@ def isEven(x):
 x = int(input("Number?"))
 
 isEven(x)
+
+def special_command():
+    pass
