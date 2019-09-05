@@ -3,6 +3,7 @@ import contacts
 import menu
 import view
 from add import add
+from remove import remove
 selection = menu.menu_selection()
 
 while selection != 5:
@@ -13,9 +14,9 @@ while selection != 5:
     elif selection == 2:
         add()
     elif selection == 3:
-        pass
+        remove()
     elif selection == 4:
-        pass
+        view.view_contacts(contacts.contacts)
     elif selection != 5:
         menu.main_menu()
     else:
