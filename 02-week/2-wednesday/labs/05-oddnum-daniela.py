@@ -1,11 +1,11 @@
+import evennum_daniela
+
 def isOdd(x):
-    if x % 2 == 1:
-        print("True")
-        return True
-    else:
-        print("False")
+    if evennum_daniela.isEven(x) == True:
         return False
+    else:
+        return True
 
 x = int(input("Number?"))
 
-isOdd(x)
+print(isOdd(x))
