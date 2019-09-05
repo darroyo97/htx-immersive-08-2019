@@ -2,6 +2,7 @@ from lookup import lookup
 import contacts
 import menu
 import view
+from add import add
 selection = menu.menu_selection()
 
 while selection != 5:
@@ -10,7 +11,7 @@ while selection != 5:
         print('Found.')
         view.view_contacts(results)
     elif selection == 2:
-        pass
+        add()
     elif selection == 3:
         pass
     elif selection == 4:
