@@ -1,1 +1,30 @@
 #This will hold my dictonary
+
+contacts = [
+    {'first_name': 'Jon', 'last_name': 'Snow', 'phone': '843-244-9255'},
+    {'first_name': 'Sansa', 'last_name': 'Stark', 'phone': '843-783-6668'},
+    {'first_name': 'Ayra', 'last_name': 'Stark', 'phone': '633-355-3002'},
+    {'first_name': 'Dani', 'last_name': 'Targaryen', 'phone': '920-226-8526'},
+    {'first_name': 'Gregor', 'last_name': 'Clegane', 'phone': '561-553-8963'},
+    {'first_name': 'Cersei', 'last_name': 'Lannister', 'phone': '229-207-0434'},
+    {'first_name': 'Joffrey', 'last_name': 'Baratheon', 'phone': '605-550-8401'},
+    {'first_name': 'Petyr', 'last_name': 'Baelish', 'phone': '715-754-4877'},
+    {'first_name': 'Khal', 'last_name': 'Drogo', 'phone': ' 858-914-7669'},
+    {'first_name': 'Ramsey', 'last_name': 'Bolton', 'phone': '336-573-5332'},
+    {'first_name': 'Theon', 'last_name': 'Greyjoy', 'phone': '787-354-7622'},
+    {'first_name': 'Lord', 'last_name': 'Varys', 'phone': '956-246-4025'},
+    {'first_name': 'Jorah', 'last_name': 'Mormant', 'phone': '605-248-2345'},
+    {'first_name': 'Margery', 'last_name': 'Tyrell', 'phone': '937-420-6328'},
+    {'first_name': 'Grey', 'last_name': 'Worm', 'phone': '708-423-7648'},
+    {'first_name': 'Tormund', 'last_name': 'Giantsbane', 'phone': '766-890-9775'},
+    {'first_name': 'Daario', 'last_name': 'Naharis', 'phone': '713-553-8216'},
+    {'first_name': 'Oberyn', 'last_name': 'Martell', 'phone': '565-871-9295'},
+    {'first_name': 'Samwell', 'last_name': 'Tarly', 'phone': '920-822-3401'},
+    {'first_name': 'Davos', 'last_name': 'Seaworth', 'phone': '843-888-1295'},
+    {'first_name': 'Eddison', 'last_name': 'Tollett', 'phone': '565-244-8865'},
+    {'first_name': 'Podrick', 'last_name': 'Payne', 'phone': '244-925-5879'},
+    {'first_name': 'Meera', 'last_name': 'Reed', 'phone': '925-345-1297'},
+    {'first_name': 'Walder', 'last_name': 'Frey', 'phone': '423-000-5183'},
+    {'first_name': 'Ellaria', 'last_name': 'Sand', 'phone': '554-872-0991'},
+]
+
