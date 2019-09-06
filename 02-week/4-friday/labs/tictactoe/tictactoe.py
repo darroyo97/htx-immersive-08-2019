@@ -1,10 +1,10 @@
 import board
-import player 
+import turn
 
 def play_game():
     #Display board
     #board.show()
-    player.turn()
+    turn.turn()
 
 
 play_game()
