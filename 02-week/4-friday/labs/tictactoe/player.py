@@ -1,3 +1,8 @@
-#tells player 1 is x
-#tells player 2 os o
+import board
+def turn():
+    position = int(input('Choose a spot.'' From 0-8:'))
+    board.board[position] = 'X'
+    board.show()
+
+
 
