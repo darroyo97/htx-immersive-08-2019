@@ -60,10 +60,17 @@ def play_game():
         #flips players
         turn.player_switch()
     #game has ended
-    if winner == 'X' or winner == 'O':
-        print(winner + " won!")
-    elif winner == None: 
-        print("Tie!")  
+    #if winner == 'X' or winner == 'O':
+    #    print(winner + " won!")
+    #elif winner == None: 
+    #    print("Tie!")  
+    if winner == 'X':
+        print('Player 1 Won!')
+    elif winner == 'O':
+        print('Player 2 Won!')
+    elif winner == None:
+        print('Tie!')
+    
 
 
 
