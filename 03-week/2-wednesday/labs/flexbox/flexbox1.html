@@ -4,9 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Flexbox 1</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        min-height: 100vh;
+        margin:0;  
+    }
+    header, footer{
+        background-color: pink;
+        height: 20vh;
+
+    }
+    .container{
+        display:flex;
+        flex-direction: row;
+        height: 60vh;
+        align-items: stretch;
+    }
+    .container > .sidebar{
+        order:1;
+        width: 300px;
+        background-color: aqua
+    }
+    .container > .content{
+        order: 2;
+        flex-grow: 2;
+        background-color: lightgreen;
+
+    }
+
+
+</style>
 </head>
 <body>
-    
+    <header>Header </header>
+    <container class="container">
+        <sidebar class="sidebar"> Sidebar</sidebar>
+        <content class="content"> Content </content>
+    </container>
+    <footer> Footer </footer>
 </body>
 </html>
