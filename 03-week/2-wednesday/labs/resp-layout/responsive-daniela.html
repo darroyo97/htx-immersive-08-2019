@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responisve Layout</title>
+    <style>
+        .body{
+            margin:0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+        }
+        .navigation, footer{
+            background-color: bisque;
+        }
+        .navigation{
+            display: flex;
+            justify-content: space-between;
+        }
+        ul {
+        list-style-type: none;
+        margin: 0;
+        }
+        .menu{
+            display: flex;
+        }
+        .menu > li {
+        margin-right: 10px;
+        }
+
+        .menu > li:last-child {
+        margin-right: 10;
+        }
+       .links{
+            font-size: 15px;
+        }
+        .welcome-message{
+            background-color: pink;
+            padding:50px;
+            color:orangered;
+            font-size: 30px;
+            text-align: center;
+        }
+        .awesome{
+            background-color: lightgreen;
+        }
+        .box-three{
+            background-color: aqua;
+            text-align: center;
+        }
+        .menu2{
+            display: flex;
+            justify-content: space-between;
+            margin-left:50px;
+            margin-right: 50px;
+        }
+        .menu3{
+            display: flex;
+            justify-content: space-between;
+            background-color: lightgreen;
+
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navigation">
+        <a class="title">Company Name</a>
+            <ul class="menu">
+                <li><a href="#" class="links">Home</a></li>
+                <li><a href="#" class="links">Products</a></li>
+                <li><a href="#" class="links">About</a></li>
+            </ul>
+    </nav>
+    <div class="welcome-message"> We Are Awesomeness</div>
+    <div class="box-three">Awesomeness
+        <ul class="menu2">
+            <li>Boldness 1
+                <ol>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ol>
+            </li>
+            <li>Boldness 2
+                <ol>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ol>
+            </li>
+            <li>Boldness 3
+                <ol>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ol>
+            </li>
+        </ul>
+ 
+    </div>
+    <div>
+        <ul class="menu3">
+            <li>Pic 1</li>
+            <li>Pic 2</li>
+        </ul>
+    </div>
+    <footer>Footer</footer>
+
+</body>
+</html>
