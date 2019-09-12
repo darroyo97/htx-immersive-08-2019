@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responisve Layout</title>
     <style>
+        img{
+            max-width: 100%;
+            height: auto;
+        }
         .body{
             margin:0;
             display: flex;
@@ -44,25 +48,42 @@
             font-size: 30px;
             text-align: center;
         }
-        .awesome{
-            background-color: lightgreen;
-        }
-        .box-three{
+        .container{
             background-color: aqua;
-            text-align: center;
-        }
-        .menu2{
             display: flex;
-            justify-content: space-between;
-            margin-left:50px;
-            margin-right: 50px;
         }
-        .menu3{
+        .resize{
+            max-width: 50%;
+            max-height: 50%;
+        }
+        .image-container{
             display: flex;
-            justify-content: space-between;
-            background-color: lightgreen;
 
         }
+
+
+@media screen and (max-width: 700px){
+        .resize{
+            max-width: 50%;
+            max-height: 50%;
+        }
+
+        .image-container{
+            flex-direction: column;
+            min-width: 100%;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .container{
+            flex-direction: column;
+            min-width: 100%;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+
+}
+
 
     </style>
 </head>
@@ -76,38 +97,39 @@
             </ul>
     </nav>
     <div class="welcome-message"> We Are Awesomeness</div>
-    <div class="box-three">Awesomeness
-        <ul class="menu2">
-            <li>Boldness 1
-                <ol>
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                </ol>
-            </li>
-            <li>Boldness 2
-                <ol>
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                </ol>
-            </li>
-            <li>Boldness 3
-                <ol>
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                </ol>
-            </li>
-        </ul>
- 
+    <div class="container">Awesomeness
+        <div class="box">
+            <ol>Boldness 1
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
+        </div>
+        <div class="box">
+            <ol>Boldness 2
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
+        </div>
+        <div>
+            <ol> Boldness 3
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
+        </div>
+
     </div>
     <div>
-        <ul class="menu3">
-            <li>Pic 1</li>
-            <li>Pic 2</li>
-        </ul>
+        <div class="image-container">
+            <img class="resize" src="images/bow-cruella.jpg" alt="Photo of my cat wearing a pink bow">
+            <img class="resize" src="images/outside-cruella.jpg" alt="Photo of my cat outside chillin">
+    
+        </div>
     </div>
+ 
+
     <footer>Footer</footer>
 
 </body>
