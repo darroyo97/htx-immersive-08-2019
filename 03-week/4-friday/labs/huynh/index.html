@@ -28,7 +28,7 @@
             justify-content: center;
         }
         .empty-container{
-            height: 5vh;
+            height: 10vh;
             background-color: black;
         }
         .navbar-brand{
@@ -40,9 +40,25 @@
         .about{
             display: flex;
             justify-content: center;
-            font-size: 90px;
-            padding: 40px;
+            font-size: 31px;
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
+        .nav-item{
+            font-size: 20px;
+        }
+        .col-12{
+            padding: 20px;
+            font-size: 25px;
+            color: #7F7A7A;
+        }
+
+@media screen and (min-width:576px){
+        .about{
+            font-size: 80px;
+        }
+
+}
 
 
     </style>
@@ -73,11 +89,14 @@
     <div class="container">
         <div class="about">Comfort Home-Made Food </div>
         <div class="row justify-content-around">
-            <div class="col-4">
-                One of two columns
+            <div class="col-12 col-md-4">
+                    "One of the best Vietnamese restaurants in the city"
+                    Houston Press, March 10, 2009
             </div>
-            <div class="col-4">
-                One of two columns
+            <div class="col-12 col-md-4">
+                    Best Vietnamese Restaurant
+                    "Huynh is an easy spot to love"
+                    Houston Press, 2010 & 2016
             </div>
         </div>
     </div>
