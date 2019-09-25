@@ -26,16 +26,18 @@ $.ajax({
   dataType: "JSON", // data type expected from server
   success: function(response) {
     console.log(response);
-    showMovieDetails(response.Title, response.Released);
+    showMovieDetails(response.Title, response.Released, response.Plot);
   },
   error: function(error) {
     console.log("Error: " + error);
   }
 });
 
-function showMovieDetails(title, released) {
+function showMovieDetails(title, released, plot) {
   var heading = $("<h1/>").text(title);
   $("body").append(heading);
   var released = $("<h2/>").text(released);
   $("body").append(released);
+  var plot = $("<h3/>").text(plot);
+  $("body").append(plot);
 }
