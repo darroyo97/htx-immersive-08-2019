@@ -26,18 +26,23 @@ $.ajax({
   dataType: "JSON", // data type expected from server
   success: function(response) {
     console.log(response);
-    showMovieDetails(response.Title, response.Released, response.Plot);
+    showMovieDetails(response.Title, response.Released, response.Plot, response.Rated);
   },
   error: function(error) {
     console.log("Error: " + error);
   }
 });
 
-function showMovieDetails(title, released, plot) {
+
+function showMovieDetails(title, released, plot, rated) {
   var heading = $("<h1/>").text(title);
-  $("body").append(heading);
-  var released = $("<h2/>").text(released);
-  $("body").append(released);
-  var plot = $("<h3/>").text(plot);
-  $("body").append(plot);
+  $("#header").append(heading);
+  var rated = $("<h2/>").text(rated);
+  $("#header").append(rated);
+  var released = $("<p1/>").text(released);
+  $("#context").append(released);
+  var plot = $("<p3/>").text(plot);
+  $("#context").append(plot);
 }
+
+
