@@ -39,10 +39,10 @@ function showMovieDetails(title, released, plot, rated) {
   $("#header").append(heading);
   var rated = $("<h2/>").text(rated);
   $("#header").append(rated);
-  var released = $("<p1/>").text(released);
-  $("#context").append(released);
-  var plot = $("<p3/>").text(plot);
-  $("#context").append(plot);
+  var released = $("<h3/>").text(released);
+  $("#header").append(released);
+  var plot = $("<p1/>").text(plot);
+  $("body").append(plot);
 }
 
 

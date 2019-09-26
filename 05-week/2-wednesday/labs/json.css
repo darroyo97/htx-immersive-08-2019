@@ -1,0 +1,21 @@
+body {
+    background-color: lightgreen;
+    color: #825501;
+}
+h1 {
+    text-align: center;
+    margin: 0%;
+}
+h2 {
+    text-align: center;
+    margin: 0%;
+}
+h3 {
+    text-align: center;
+    margin: 0%;
+}
+.context {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
