@@ -7,13 +7,16 @@ html {
     background-size: cover;
   }
 body {
-    color:white;
+    color:#F4F683;
+    font-family: 'Indie Flower', cursive;
 }
 #header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
+    align-items: baseline;
+    border-bottom: 8px dotted #F4F683;
 }
 #section-one {
     display: flex;
@@ -21,10 +24,28 @@ body {
     justify-content: space-between;
     text-align: center;
 }
+h1 {
+    font-size: 100px;
+    margin: 0%;
+    padding-left: 40px;
+}
 
 h2 {
     padding-top: 5px;
+    font-family: 'Mansalva', cursive;
+    font-size: 30px;
+    margin-left: 140px;
+    margin-top: 0%;
 }
+h3, h4 {
+    margin-bottom:0%;
+    font-size: 20px;
+}
+h4 {
+    margin-top: 0%;
+
+}
+
   @media screen and (min-width: 440px) {
     /* Mobile Screens */
     #header {
@@ -34,5 +55,15 @@ h2 {
     #section-one {
         display: flex;
         flex-direction: row;
+    }
+    h2 {
+        margin-right: 50px;
+        font-size: 25px;
+    }
+    h4 {
+        margin: 5% 5% 0% 0%;
+    }
+    h3, h4 {
+        font-size: 25px;
     }
   }
