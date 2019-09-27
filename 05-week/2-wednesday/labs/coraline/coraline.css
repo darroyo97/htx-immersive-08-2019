@@ -1,5 +1,15 @@
+/* https://css-tricks.com/perfect-full-page-background-image/*/
+html { 
+    background: url("tunnel.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+body {
+    color:white;
+}
 #header {
-    background-color: pink;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -11,17 +21,13 @@
     justify-content: space-between;
     text-align: center;
 }
-body {
-    margin: 0%;
-    background-color: black;
-}
+
 h2 {
     padding-top: 5px;
 }
-@media screen and (min-width: 440px) {
+  @media screen and (min-width: 440px) {
     /* Mobile Screens */
     #header {
-      background-color:lightgreen;
       display: flex;
       flex-direction: row;
     }
@@ -29,5 +35,4 @@ h2 {
         display: flex;
         flex-direction: row;
     }
-
   }
