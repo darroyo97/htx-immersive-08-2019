@@ -47,5 +47,6 @@ function showMovieDetails(title, released, genre, rated, plot) {
   $("#section-one").append(rated);
   var plot = $("<p1/>").text(plot);
   $("#section-two").append(plot);
+  
 
 }

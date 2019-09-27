@@ -82,6 +82,11 @@ form {
     padding-left: 10px;
     text-decoration: line-through red;
 }
+#video-container {
+    padding:56.25% 0 0 0;
+    margin-top: 10px;
+    position:relative;
+}
 
   @media screen and (min-width: 440px) {
     /* Mobile Screens */
