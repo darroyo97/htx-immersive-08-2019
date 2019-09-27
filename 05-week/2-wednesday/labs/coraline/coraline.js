@@ -27,16 +27,20 @@ $.ajax({
   dataType: "JSON", // data type expected from server
   success: function(response) {
     console.log(response);
-    showMovieDetails(response.Title, response.Released);
+    showMovieDetails(response.Title, response.Released, response.Genre, response.Rated);
   },
   error: function(error) {
     console.log("Error: " + error);
   }
 });
 
-function showMovieDetails(title, released) {
+function showMovieDetails(title, released, genre, rated) {
   var heading = $("<h1/>").text(title);
   $("#header").append(heading);
   var released = $("<h2/>").text(released);
   $("#header").append(released);
+  var genre = $("<h3/>").text(genre);
+  $("#section-one").append(genre);
+  var rated = $("<h4/>").text(rated);
+  $("#section-one").append(rated);
 }
