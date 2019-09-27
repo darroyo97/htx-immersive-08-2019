@@ -46,7 +46,8 @@ h4 {
 
 }
 #image-container {
-    border-bottom: 8px dotted #F4F683
+    border-top: 8px dotted #F4F683;
+    border-bottom: 8px dotted #F4F683;
 
 }
 
