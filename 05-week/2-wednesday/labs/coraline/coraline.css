@@ -59,14 +59,28 @@ h3, h4 {
     margin-top: 20px;
     font-size: 18px;
     text-align: center;
+    border-bottom: 8px dotted #F4F683;
 }
+
 button {
     background-color: transparent;
     padding:0%;
-    border: transparent;   
+    border: transparent;
+       
 }
 #image-button {
     height: 50px;
+    
+}
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+}
+.text {
+    padding-left: 10px;
+    text-decoration: line-through red;
 }
 
   @media screen and (min-width: 440px) {
