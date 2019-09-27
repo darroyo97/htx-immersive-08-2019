@@ -1,0 +1,22 @@
+#header {
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+body {
+    margin: 0%;
+    background-color: black;
+}
+h2 {
+    padding-top: 5px;
+}
+@media screen and (min-width: 440px) {
+    /* Mobile Screens */
+    #header {
+      background-color:lightgreen;
+      display: flex;
+      flex-direction: row;
+    }
+  }

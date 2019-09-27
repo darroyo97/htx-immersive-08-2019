@@ -36,7 +36,7 @@ $.ajax({
 
 function showMovieDetails(title, released) {
   var heading = $("<h1/>").text(title);
-  $("body").append(heading);
+  $("#header").append(heading);
   var released = $("<h2/>").text(released);
-  $("body").append(released);
+  $("#header").append(released);
 }
