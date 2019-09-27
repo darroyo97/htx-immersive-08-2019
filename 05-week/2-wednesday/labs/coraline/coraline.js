@@ -27,14 +27,16 @@ $.ajax({
   dataType: "JSON", // data type expected from server
   success: function(response) {
     console.log(response);
-    showMovieDetails(response.Title, response.Released, response.Genre, response.Rated);
+    showMovieDetails(
+        response.Title, response.Released, response.Genre, response.Rated, response.Plot
+        );
   },
   error: function(error) {
     console.log("Error: " + error);
   }
 });
 
-function showMovieDetails(title, released, genre, rated) {
+function showMovieDetails(title, released, genre, rated, plot) {
   var heading = $("<h1/>").text(title);
   $("#header").append(heading);
   var released = $("<h2/>").text(released);
@@ -43,4 +45,7 @@ function showMovieDetails(title, released, genre, rated) {
   $("#section-one").append(genre);
   var rated = $("<h4/>").text(rated);
   $("#section-one").append(rated);
+  var plot = $("<p1/>").text(plot);
+  $("#section-two").append(plot);
+
 }

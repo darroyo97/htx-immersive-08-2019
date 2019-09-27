@@ -47,7 +47,6 @@ h4 {
 }
 #image-container {
     border-top: 8px dotted #F4F683;
-    border-bottom: 8px dotted #F4F683;
 
 }
 
@@ -58,6 +57,11 @@ h4 {
     width: 50%;
     border: 5px outset #382E4B;
 
+}
+#section-two {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
 }
 
   @media screen and (min-width: 440px) {
