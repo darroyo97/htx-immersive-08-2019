@@ -45,6 +45,19 @@ h4 {
     margin-top: 0%;
 
 }
+#image-container {
+    border-bottom: 8px dotted #F4F683
+
+}
+
+.center {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 5px outset #382E4B;
+
+}
 
   @media screen and (min-width: 440px) {
     /* Mobile Screens */
