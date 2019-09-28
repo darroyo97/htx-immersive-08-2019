@@ -17,18 +17,20 @@ body {
     text-align: center;
     align-items: baseline;
 }
-#section-one {
+#section-one, #section-three{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
     align-items: flex-start;
 }
+
 h1 {
     font-size: 100px;
     margin: 0%;
     padding-left: 40px;
 }
+
 
 h2 {
     padding-top: 5px;
@@ -37,7 +39,7 @@ h2 {
     margin-left: 140px;
     margin-top: 0%;
 }
-h3, h4 {
+ h3, h4 , h5, h6{
     margin-bottom:0%;
     margin-top: 0%;
     font-size: 20px;
@@ -61,7 +63,13 @@ h3, h4 {
     text-align: center;
     border-bottom: 8px dotted #F4F683;
 }
-
+#section-three {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 8px dotted #F4F683;
+}
 button {
     background-color: transparent;
     padding:0%;
@@ -96,7 +104,7 @@ button {
       display: flex;
       flex-direction: row;
     }
-    #section-one {
+    #section-one, #section-three{
         display: flex;
         flex-direction: row;
     }
@@ -104,7 +112,7 @@ button {
         margin-right: 50px;
         font-size: 25px;
     }
-    h4 {
+    h4, h6 {
         margin: 0% 5% 0% 0%;
     }
     h3, h4 {

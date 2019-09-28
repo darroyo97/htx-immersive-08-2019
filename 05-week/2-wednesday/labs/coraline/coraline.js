@@ -28,7 +28,8 @@ $.ajax({
   success: function(response) {
     console.log(response);
     showMovieDetails(
-        response.Title, response.Released, response.Genre, response.Rated, response.Plot
+        response.Title, response.Released, response.Genre, response.Rated, response.Plot,
+        response.Production, response.Actors
         );
   },
   error: function(error) {
@@ -36,7 +37,7 @@ $.ajax({
   }
 });
 
-function showMovieDetails(title, released, genre, rated, plot) {
+function showMovieDetails(title, released, genre, rated, plot, production, actors) {
   var heading = $("<h1/>").text(title);
   $("#header").append(heading);
   var released = $("<h2/>").text(released);
@@ -47,6 +48,10 @@ function showMovieDetails(title, released, genre, rated, plot) {
   $("#section-one").append(rated);
   var plot = $("<p1/>").text(plot);
   $("#section-two").append(plot);
+  var production = $("<h5/>").text(production);
+  $("#section-three").append(production);
+  var actors = $("<h6/>").text(actors);
+  $("#section-three").append(actors);
   
 
 }
