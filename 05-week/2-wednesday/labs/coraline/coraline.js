@@ -52,5 +52,8 @@ function showMovieDetails(title, released, genre, rated, plot) {
 }
 $("#image-button").click(function(e) {
   e.preventDefault();
-  setTimeout(function(url) { window.location = "evil-mother.jpeg" }, 2000, this.href);
+  setTimeout(function(url) { window.location = "evil-mother.jpeg" }, 7000, this.href);
 });
+
+var sound = new Audio();
+sound.src = "door.mp3";
