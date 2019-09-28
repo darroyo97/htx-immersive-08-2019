@@ -72,12 +72,14 @@ button {
     height: 50px;
     
 }
-form {
+
+#button-container{
     display: flex;
     align-items: center;
     justify-content: center;
     padding:10px;
 }
+
 .text {
     padding-left: 10px;
     text-decoration: line-through red;

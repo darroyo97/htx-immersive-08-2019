@@ -50,3 +50,7 @@ function showMovieDetails(title, released, genre, rated, plot) {
   
 
 }
+$("#image-button").click(function(e) {
+  e.preventDefault();
+  setTimeout(function(url) { window.location = "evil-mother.jpeg" }, 2000, this.href);
+});
